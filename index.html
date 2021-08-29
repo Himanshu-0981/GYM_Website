@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- New -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    <title>Fitness Club</title>
+</head>
+<style>
+    body {
+        margin: 0px;
+        padding: 0px;
+        background: url("images/bg\ girl.jpg");
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+        font-family: 'Baloo Bhai 2', cursive;
+        font-weight: 600;
+    }
+
+    .left {
+        /* border: 2px solid red; */
+        display: inline-block;
+        position: absolute;
+        left: 60px;
+        top: 10px;
+    }
+
+    .left div {
+        text-align: center;
+        line-height: 10px;
+    }
+
+    .left img {
+        width: 80px;
+        filter: invert();
+        height: 40px;
+    }
+
+    .mid {
+        /* border: 1px solid yellow; */
+        display: block;
+        width: 40%;
+        margin: 10px auto;
+    }
+
+    .right {
+        /* border: 2px solid greenyellow; */
+        display: inline-block;
+        position: absolute;
+        right: 34px;
+        top: 10px;
+        font-family: 'Secular One', sans-serif;
+    }
+
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 20px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 10px;
+    }
+
+    .navbar li:hover {
+        text-decoration: underline;
+        color: grey;
+    }
+
+    .btn {
+        margin: 0px 9px;
+        color: white;
+        background-color: black;
+        border: 1px solid white;
+        padding: 4px 14px;
+        word-spacing: 2px;
+        border-radius: 5px;
+        font-family: 'Baloo Bhai 2', cursive;
+    }
+
+    .btn:hover {
+        background-color: grey;
+    }
+
+    .salogan{
+        display: inline-block;
+        position: absolute;
+        right: 100px;
+        top: 200px;
+        font-size: 70px;
+        padding: -50px;
+    }
+
+    .container {
+        border: 1px solid white;
+        margin: 116px 80px;
+        /* height: 80px; */
+        width: 350px;
+        padding: 20px 70px 20px 70px;
+        /* width: 33%; */
+        border-radius: 30px;
+    }
+
+    .container h1 {
+        text-align: center;
+    }
+
+    .formgroup input {
+        outline: none;
+        text-align: center;
+        display: block;
+        width: 350px;
+        margin: 11px auto;
+        padding: 7px 0px 7px 0px;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: bold;
+        border: none;
+    }
+
+    .btn-submit {
+        /* margin: 10px 50px;
+        padding: 10px 100px;
+        border-radius: 30px;
+        color: #fff;
+        background-color: #4267B2;
+        font-weight: 400;
+        */
+        border: 1px solid white;
+        display: block;
+        width: 100%;
+        margin: 10px auto;
+        padding: 6px;
+        border-radius: 10px;
+        background:transparent;
+        font-family: 'Secular One', sans-serif;
+        outline: white;
+        color: white;
+
+    }
+
+    .btn-submit:hover {
+        background-color: #d3d7df;
+        color: black;
+    }
+</style>
+
+<body>
+    <header class="header">
+
+        <div class="left">
+            <img src="images/logo.png" alt="">
+            <div>Fitness Point</div>
+        </div>
+
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active"></a> Home</li>
+                <li><a href="#"></a> About Us</li>
+                <li><a href="#"></a> Fitness Calculator</li>
+                <li><a href="#"></a> Contact Us</li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+        <div class="salogan">
+            <p>Don't Sit Get Fit</p>
+        </div>
+        <div class="container">
+            <h1>Join this Gym Hurry Up!</h1>
+            <form action="noaction.php">
+                <div class="formgroup">
+                    <input type="text" placeholder="Enter your Name">
+                </div>
+                <div class="formgroup">
+                    <input type="text" placeholder="Enter your Age">
+                </div>
+                <div class="formgroup">
+                    <input type="text" placeholder="Enter your Gender">
+                </div>
+                <div class="formgroup">
+                    <input type="text" placeholder="Enter your Locality">
+                </div>
+                <button class="btn-submit">Submit</button>
+            </form>
+        </div>
+
+    </header>
+</body>
+
+</html>
